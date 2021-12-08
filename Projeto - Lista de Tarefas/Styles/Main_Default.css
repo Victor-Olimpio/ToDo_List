@@ -1,0 +1,407 @@
+@charset "UTF-8"; 
+
+/* VARIÁVEIS */
+:root {
+    --Zer: #FFFFFF;
+    --One: #F2F2F2;
+    --Two: #EDE7DB;
+    --Thr: #03A6A6;
+    --Fou: #037E8C;
+    --Fiv: #1C5880;
+    --Six: #013563;
+}
+
+/* CONFIGURAÇÕES - GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES - BODY */
+.body-page {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-attachment: fixed;
+    background-color: var(--Two);
+}
+
+/* CONFIGURAÇÕES - HEADER */
+.header-page {
+    display: block;
+
+    width: 60rem;
+    margin: 0 auto;
+    padding: 1.0rem;
+    margin-top: 2.0rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1.0rem;
+
+    border-radius: 0.7rem;
+    background-color: var(--Zer);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.280);
+}
+
+.header-page .header-title {
+    width: 50rem;
+    margin: 0 auto;
+    padding: 0.8rem;
+
+    color: var(--Six);
+    font-size: 2.3rem;
+    text-align: center;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.280);
+}
+
+/* CONFIGURAÇÕES - MAIN | SEARCH BAR */
+.main-page {
+    width: 60rem;
+    margin: 0 auto;
+    padding: 1.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+
+    border-radius: 0.5rem;
+    background-color: var(--Zer);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.280);
+}
+
+.main-page .container-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1.0rem;
+}
+
+.container-page .input-quest {
+    width: 35rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+
+    font-size: 1.0rem;
+
+    border-radius: 0.4rem;
+    border: 1px solid rgba(63, 36, 36, 0.350);
+}
+
+.container-page .input-quest:focus {
+    outline: none;
+    border: 1px solid rgba(63, 36, 36, 0.350);
+}
+
+.container-page .input-button {
+    width: 5.0rem;
+    height: 2.2rem;
+
+    color: var(--Zer);
+    font-size: 1.0rem;
+
+    cursor: pointer;
+
+    border-radius: 0.5rem;
+    background-color: var(--Fiv);
+    border: 1px solid rgba(255, 255, 255, 0.650);
+}
+
+.container-page .input-button:hover {
+    transition: .5s ease all;
+
+    color: var(--Fiv);
+    background-color: var(--Zer);
+}
+
+.container-page .input-button:not(:hover) {
+    transition: .5s ease all;
+
+    color: var(--Zer);
+    background-color: var(--Fiv);
+}
+
+/* CONFIGURAÇÕES - MAIN | TASKS */
+.container-title {
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1.0rem;
+
+    color: var(--Fiv);
+    font-size: 1.2rem;
+    text-align: center;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.280);
+}
+
+.task-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    color: var(--Fiv);
+}
+
+.tasks-list {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.tasks-list .tasks-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3rem;
+    margin-top: 0.9rem;
+
+    border-radius: 0.5rem;
+    background-color: var(--One);
+}
+
+.tasks-items .edit-task-button {
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    color: var(--One);
+    border-radius: 0.2rem;
+    background-color: var(--Fiv);
+    border: 1px solid rgba(0, 0, 0, 0.200);
+}
+
+.tasks-items .edit-task-button:hover {
+    transition: .5s ease all;
+
+    color: var(--Fiv);
+    background-color: var(--One);
+}
+
+.tasks-items .edit-task-button:not(:hover) {
+    transition: .5s ease all;
+
+    color: var(--One);
+    background-color: var(--Fiv);
+}
+
+/* CONFIGURAÇÕES - MAIN | TASKS | JAVASCRIPT */
+.tasks-list .tasks-items-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.0rem;
+    margin-top: 0.9rem;
+    padding-right: 2.6rem;
+
+    border-radius: 0.5rem;
+    background-color: var(--One);
+}
+
+.tasks-items-two .edit-task-button-two {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+
+    cursor: pointer;
+
+    color: var(--One);
+    border-radius: 0.2rem;
+    background-color: var(--Fiv);
+    border: 1px solid rgba(0, 0, 0, 0.200);
+}
+
+.tasks-items-two .edit-task-button-two:hover {
+    transition: .5s ease all;
+
+    color: var(--Fiv);
+    background-color: var(--One);
+}
+
+.tasks-items-two .edit-task-button-two:not(:hover) {
+    transition: .5s ease all;
+
+    color: var(--One);
+    background-color: var(--Fiv);
+}
+
+/* CONFIGURAÇÕES - MAIN | TASKS | EDIT WINDOW */
+#edit-window {
+    display: none;
+    position: fixed;
+    z-index: 200;
+
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    padding: 1.3rem;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 0.5rem;
+    background-color: var(--Zer);
+    border: 1px solid rgba(63, 36, 36, 0.350);
+}
+
+#edit-window.open {
+    display: block !important;
+}
+
+#edit-window .close-window {
+    position: absolute;
+
+    top: 0.9rem;
+    right: 0.9rem;
+    width: 2.3rem;
+    height: 2.0rem;
+    padding: 0.5rem;
+
+    cursor: pointer;
+
+    border: none;
+    color: var(--One);
+    border-radius: 0.3rem;
+    background-color: var(--Fiv);
+}
+
+#edit-window .close-window:hover {
+    transition: .5s ease all;
+
+    color: var(--Fiv);
+    background-color: var(--One);
+}
+
+#edit-window .close-window:not(:hover) {
+    transition: .5s ease all;
+
+    color: var(--One);
+    background-color: var(--Fiv);
+} 
+
+#edit-title {
+    padding: 0.5rem;
+
+    color: var(--Fiv);
+}
+
+#background-window {
+    display: none;
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0.5;
+    background-color: var(--Two);
+} 
+
+#background-window.open {
+    display: block !important;
+}
+
+.form-edit {
+    width: 100%;
+    margin-top: 1.0rem;
+}
+
+.form-line {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0.9rem;
+}
+
+.form-line label {
+    color: var(--Fiv);
+
+    margin-bottom: 0.9rem;
+}
+
+.form-line .input-name-edit {
+    padding: 0.5rem;
+
+    font-size: 1.0rem;
+
+    border-radius: 0.4rem;
+    border: 1px solid rgba(63, 36, 36, 0.350);
+}
+
+.form-line .input-name-edit:focus {
+    outline: none;
+    border: 1px solid rgba(63, 36, 36, 0.350);
+}
+
+.form-line .update-task {
+    color: var(--Zer);
+    font-size: 1.0rem;
+
+    cursor: pointer;
+
+    padding: 0.5rem;
+    margin-bottom: 0.9rem;
+
+    border-radius: 0.5rem;
+    background-color: var(--Fiv);
+    border: 1px solid rgba(255, 255, 255, 0.650);
+}
+
+.form-line .update-task:hover {
+    transition: .5s ease all;
+
+    color: var(--Fiv);
+    background-color: var(--One);
+}
+
+.form-line .update-task:not(:hover) {
+    transition: .5s ease all;
+
+    color: var(--One);
+    background-color: var(--Fiv);
+}
+
+/* CONFIGURAÇÕES - FOOTER */
+.footer-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1.4rem;
+
+    border-radius: 0.4rem;
+    background-color: var(--Zer);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.280);
+}
+
+.footer-page .contact-link {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    color: var(--Fiv);
+}
+
+.footer-page .contact-link:hover {
+    transition: .8s ease all;
+
+    color: var(--One);
+    border-radius: 0.5rem;
+    background-color: var(--Fiv);
+}
+
+.footer-page .contact-link:not(:hover) {
+    transition: .8s ease all;
+
+    color: var(--Fiv);
+    border-radius: 0.5rem;
+    background-color: var(--Zer); 
+}

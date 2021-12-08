@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--FAVICON-->
+        <link rel="shortcut icon" href="../Images/Icon-ToDo.ico" type="image/x-icon">
+        <!--CSS-->
+        <p class="link-style-page"><link rel="stylesheet" href="../Styles/Main_Default.css"></p>
+        <title>ToDo List</title>
+    </head>
+    <body class="body-page">
+        <!--INÍCIO DO HEADER-->
+        <header class="header-page">
+            <h1 class="header-title">ToDo List JS</h1>
+        </header>
+        <!--FIM DO HEADER-->
+        <!--INÍCIO DO MAIN-->
+        <main class="main-page">
+            <div class="container-page">
+                <input type="text" name="input-quest" class="input-quest" placeholder="New Task">
+                <button type="submit" class="input-button">Add</button>
+            </div>
+            <div class="container-title">
+                <h2 class="task-title">DD/MM/AA</h2>
+            </div>
+            <!--INÍCIO DA LISTA DE TAREFAS-->
+            <ul class="tasks-list">
+            </ul>
+            <!--FIM DA LISTA DE TAREFAS-->
+            <!--INÍCIO DA JANELA DE EDIÇÃO-->
+            <div id="edit-window">
+                <button class="close-window">
+                    <i class="fa fa-remove"></i>
+                </button>
+                <h2 id="edit-title">#1000</h2>
+                <hr class="window-line">
+                <form class="form-edit">
+                    <div class="form-line">
+                        <label for="nome">Task Name</label>
+                        <input type="text" class="input-name-edit">
+                    </div>
+                    <div class="form-line">
+                        <button class="update-task">Save</button>
+                    </div>
+                </form>
+            </div>
+            <div id="background-window"></div>
+            <!--FIM DA JANELA DE EDIÇÃO-->
+        </main>
+        <!--FIM DO MAIN-->
+        <!--INÍCIO DO FOOTER-->
+        <footer class="footer-page">
+            <a href="https://www.instagram.com/victorvasconcelos087/" class="contact-link" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://github.com/Victor-Olimpio" class="contact-link" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://mail.google.com/mail/u/2/#inbox" class="contact-link" target="_blank"><i class="fas fa-mail-bulk"></i></a>
+        </footer>
+    </body>
+    <!--JAVASCRIPT-->
+    <script src="../JS/Main.js"></script>
+    <script src="../JS/Date.js"></script>
+    <script src="https://kit.fontawesome.com/6797397c81.js" crossorigin="anonymous"></script>
+</html>
